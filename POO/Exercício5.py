@@ -27,7 +27,7 @@ class Carro:
     def adicionar_combustivel(self, tanque):
         self.quantidade_combustivel = self.quantidade_combustivel + tanque
 
-    def obter_combustivel(self, a):
+    def obter_combustivel(self):
         return self.quantidade_combustivel
 
     def andar(self, km_andar):
@@ -40,5 +40,5 @@ fusca.adicionar_combustivel(20)  # abastece com 20 litros de combustível
 
 fusca.andar(100)  # anda 100 quilômetros.
 
-print(fusca.obter_combustivel(fusca.quantidade_combustivel))
+print(fusca.quantidade_combustivel)
 # imprime o combustível que resta no tanque
