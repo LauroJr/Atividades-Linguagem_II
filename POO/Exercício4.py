@@ -22,7 +22,6 @@ class Aluno():
 
     def estudar(self, a):
         self.tempo_sem_dormir = a + self.tempo_sem_dormir
-        a = 0
 
     def dormir(self, b):
         self.tempo_sem_dormir = self.tempo_sem_dormir - b
@@ -38,4 +37,5 @@ aluno1.dormir(2)
 aluno1.estudar(4)
 
 aluno1.dormir(2)
-print('O aluno', aluno1.nome, 'está a', aluno1.tempo_sem_dormir,'horas sem dormir')
+print('O aluno', aluno1.nome, 'está a', aluno1.tempo_sem_dormir,
+      'horas sem dormir')

@@ -24,7 +24,6 @@ class Televisao:
         '''
         aumentar = int(input("Aumente o volume: "))
         self.volume = aumentar + vol
-        return self.volume
 
     def diminuir_volume(self, vol):
         '''Esta função recebe o parâmetro VOL, que é o volume atual da tv
@@ -32,7 +31,6 @@ class Televisao:
         '''
         diminuir = int(input("Diminua o volume: "))
         self.volume = vol - diminuir
-        return self.volume
 
     def alterar_canal(self, n_canal):
         '''Esta função recebe o parâmetro n_canal, que contém o valor do canal já
@@ -40,7 +38,6 @@ class Televisao:
         objetivo alterar o canal de acordo com o parâmetro passado.
         '''
         self.canal = n_canal
-        return self.canal
 
 
 # Todo comando que tiver "tv.alguma_coisa", está chamando um método

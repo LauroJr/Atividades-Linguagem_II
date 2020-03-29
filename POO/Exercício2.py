@@ -26,13 +26,10 @@ class Triangulo:
     def maior_lado(self, lado_a, lado_b, lado_c):
         if lado_a > lado_b and lado_a > lado_c:
             self.lado_b = lado_a
-            return
         elif lado_b > lado_a and lado_b > lado_c:
             self.lado_b = lado_b
-            return
         else:
             self.lado_b = lado_c
-            return
 
 
 tri = Triangulo()
