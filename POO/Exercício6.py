@@ -1,10 +1,7 @@
 '''Exercício 06
 
 A associação entre classes ocorre quando uma classe possui atributos que são
-objetos de outra classe. De acordo com esse conceito, observe o diagrama de
-classes abaixo, que representa uma associação onde uma Pessoa possui um Carro.
-
-##### aqui entra a UML ######
+objetos de outra classe.
 
 Implemente as classes Pessoa e Carro.
 
@@ -35,7 +32,7 @@ class Pessoa:
         self.carro = None
 
     def comprar_carro(self, my_car):
-        self.carro = self.my_car.modelo
+        self.carro = my_car
         return
 
 
