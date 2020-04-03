@@ -6,21 +6,22 @@ objetos de outra classe.
 Implemente as classes Pessoa e Carro.
 
 Classe Pessoa:
-Atributos:
-nome: nome da pessoa (valor inicial definido no construtor)
-idade: idade da pessoa (valor inicial definido no construtor)
-carro: objeto da classe Carro (valor inicial None)
-Métodos:
-comprar_carro: recebe um objeto Carro e associa esse objeto ao atributo carro.
+    Atributos:
+        nome: nome da pessoa (valor inicial definido no construtor)
+        idade: idade da pessoa (valor inicial definido no construtor)
+        carro: objeto da classe Carro (valor inicial None)
+    Métodos:
+        comprar_carro: recebe um objeto Carro e associa esse objeto ao
+        atributo carro.
 
 Classe Carro:
-Atributos:
-marca: marca do carro (valor inicial definido no construtor)
-modelo: modelo do carro (valor inicial definido no construtor)
-placa: placa do carro (valor inicial definido no construtor)
-ano: ano de fabricação do carro (valor inicial definido no construtor)
-Métodos:
-Não possui
+    Atributos:
+        marca: marca do carro (valor inicial definido no construtor)
+        modelo: modelo do carro (valor inicial definido no construtor)
+        placa: placa do carro (valor inicial definido no construtor)
+        ano: ano de fabricação do carro (valor inicial definido no construtor)
+    Métodos:
+        Não possui
 '''
 
 
