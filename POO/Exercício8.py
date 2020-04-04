@@ -40,10 +40,10 @@ class Carro:
         self.ligado = False
 
     def verificar_pneu(self):
-        print("Pneu1: ", p1.pressao)
-        print("Pneu2: ", p2.pressao)
-        print("Pneu3: ", p3.pressao)
-        print("Pneu4: ", p4.pressao)
+        print("Pneu1: ", self.pneu1.pressao)
+        print("Pneu2: ", self.pneu2.pressao)
+        print("Pneu3: ", self.pneu3.pressao)
+        print("Pneu4: ", self.pneu4.pressao)
         if self.ligado is True:
             print("Carro Ligado. Desligue-o")
         elif self.ligado is False and p3.pressao == 0:
