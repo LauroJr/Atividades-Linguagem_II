@@ -52,4 +52,4 @@ meu_pedido.adicionar_produto(cafe)
 meu_pedido.adicionar_produto(arroz)
 meu_pedido.adicionar_produto(feijao)
 print('O valor total é: ', meu_pedido.calcular_valor())	     # imprime 20.90
-# print("Lista completa: ",meu_pedido.produtos.nome.preco.quantidade)  TESTAR
+# print("Lista completa: ",meu_pedido.produtos.nome.preco.quantidade)
