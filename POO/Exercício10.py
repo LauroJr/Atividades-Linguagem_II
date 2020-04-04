@@ -19,14 +19,14 @@ class Exame:
 
     def imprimir_exame(self):
         print("DADOS / PACIENTE")
-        print("Nome: ", exame01.paciente.nome)
-        print("CPF: ", exame01.paciente.cpf)
-        print("Idade: ", exame01.paciente.idade)
+        print("Nome: ", self.paciente.nome)
+        print("CPF: ", self.paciente.cpf)
+        print("Idade: ", self.paciente.idade)
         print("=================================")
-        print("DADOS / MÉDICO")
-        print("Nome: ", exame01.medico.nome)
-        print("CRM: ", exame01.medico.crm)
-        print("Especialização: ", exame01.medico.especializacao)
+        print("DADOS / MÉDICO(a)")
+        print("Nome: ", self.medico.nome)
+        print("CRM: ", self.medico.crm)
+        print("Especialização: ", self.medico.especializacao)
         print("========================================")
         print("Resultado do Exame: ")
         print(self.descricao + ": " + self.resultado)
@@ -48,9 +48,14 @@ class Paciente:
         self.idade = idade
 
 
-paciente = Paciente('Marcelo Silva', '033444555-22', 26)
+paciente = Paciente('Marcelo Silva', '587.555.487-55', 26)
 medico = Medico('Ana Beatriz', 333431, 'Clínico Geral')
-exame01 = Exame(medico, paciente, 'COVID-19', 'Negativo')  
+exame01 = Exame(medico, paciente, 'COVID-19', 'Negativo')
+exame01.imprimir_exame()
+
+paciente2 = Paciente('Jonas Silva', '958.588.888-77', 37)
+medico = Medico('Ana Beatriz', 333431, 'Clínico Geral')
+exame01 = Exame(medico, paciente2, 'COVID-19', 'Negativo')
 exame01.imprimir_exame()
 
 # Deve exibir relatório com todos os dados do exame (inclusive os dados do
