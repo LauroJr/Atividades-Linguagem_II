@@ -28,16 +28,17 @@ Classe Pessoa
 
 class Pessoa:
 
-    def __init__(self, nome, cel, email, objeto1, n_dpe):
+    def __init__(self, nome, cel, email, objeto_emprego, n_dpe):
         self.nome = nome
         self.fone = cel
         self.email = email
-        self.emprego = objeto1
+        self.emprego = objeto_emprego
         self.dependentes = n_dpe
 
     def calcular_salario(self):
-        sal_atual = (self.dependentes * objeto2.emprego.bonus *
-                     objeto2.emprego.salario) / 100 + objeto2.emprego.salario
+        sal = objeto_pessoa.emprego.salario  # fiz isso para ganhar espaço
+        sal_atual = (self.dependentes * objeto_pessoa.emprego.bonus *
+                     objeto_pessoa.emprego.salario) / 100 + sal
         return sal_atual
 
 
@@ -49,7 +50,8 @@ class Emprego:
         self.bonus = bonus
 
 
-objeto1 = Emprego('Desenvolvedor', 1955.58, 3)
-objeto2 = Pessoa('Lauro', '(11)96187-0730', 'lauro@gmail.com', objeto1, 3)
-a = objeto2.calcular_salario()
+objeto_emprego = Emprego('Desenvolvedor', 1955.58, 3)
+objeto_pessoa = Pessoa('Lauro', '(11)96187-0730', 'lauro@gmail.com',
+                       objeto_emprego, 3)
+a = objeto_pessoa.calcular_salario()
 print(a)
