@@ -40,16 +40,20 @@ class Carro:
         self.ligado = False
 
     def verificar_pneu(self):
-        print("Pneu1: ", self.pneu1.pressao)
-        print("Pneu2: ", self.pneu2.pressao)
-        print("Pneu3: ", self.pneu3.pressao)
-        print("Pneu4: ", self.pneu4.pressao)
         if self.ligado is True:
             print("Carro Ligado. Desligue-o")
+            print("Pneu1: ", self.pneu1.pressao)
+            print("Pneu2: ", self.pneu2.pressao)
+            print("Pneu3: ", self.pneu3.pressao)
+            print("Pneu4: ", self.pneu4.pressao)
         elif self.ligado is False and p3.pressao == 0:
             print("O carro está desligado, Agora posso concertá-lo")
         elif p1.pressao > 31:
             print("Carro concertado")
+            print("Pneu1: ", self.pneu1.pressao)
+            print("Pneu2: ", self.pneu2.pressao)
+            print("Pneu3: ", self.pneu3.pressao)
+            print("Pneu4: ", self.pneu4.pressao)
 
 
 class Pneu:
@@ -70,7 +74,7 @@ p3 = Pneu(36)
 p4 = Pneu(36)
 meucarro = Carro(p1, p2, p3, p4)
 meucarro.ligar()
-meucarro.verificar_pneu()
+#meucarro.verificar_pneu()
 meucarro.pneu3.furar()
 meucarro.verificar_pneu()  # exibir a pressão de cada pneu.
 meucarro.desligar()

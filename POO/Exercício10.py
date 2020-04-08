@@ -18,6 +18,7 @@ class Exame:
         self.resultado = result
 
     def imprimir_exame(self):
+        #print(f'DADOS / PACIENTE\nNome: {self.paciente.nome}')
         print("DADOS / PACIENTE")
         print("Nome: ", self.paciente.nome)
         print("CPF: ", self.paciente.cpf)
