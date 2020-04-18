@@ -28,5 +28,8 @@ dep1 = Pessoa("Maria", "", "", None)
 dep2 = Pessoa("Joao", "", "", None)
 
 pessoa1.dependentes.append(dep1)
+pessoa1.dependentes.append(dep2)
 
 print("Salario: ", pessoa1.calcular_salario())
+for i in pessoa1.dependentes:
+    print(i.nome)
