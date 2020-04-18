@@ -48,11 +48,13 @@ class Filme:
 
 
 lista_filmes = []
+cont = 0
 
 for filme in range(3):
+    cont += 1
     filme = Filme()
-    titulo = input('Cadastre o nome do filme: ')
-    genero = input(f'Qual o gênero do filme: {titulo}?: ')
+    titulo = input(f'Cadastre o nome do {cont}º filme: ')
+    genero = input(f'Qual o gênero do filme {titulo} ?: ')
     print()
     filme.set_titulo(titulo)
     filme.set_genero(genero)
@@ -69,6 +71,6 @@ for i in range(101):
 
 for filme in lista_filmes:
     cont += 1
-    print(f'filme {cont}: {filme.get_titulo()}')
-    print(f'gênero do filme {cont} {filme.get_genero()}')
+    print(f'{cont}º filme : {filme.get_titulo()}')
+    print(f'gênero do {cont}º filme: {filme.get_genero()}')
     print()
