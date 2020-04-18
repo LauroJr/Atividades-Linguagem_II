@@ -12,6 +12,4 @@ for I in range(1, 7):
     if n > 1:
         print("O número ",I," aparece ",n," vezes.")
     if n == 1:
-        print("O número ",I," aparece ",n," vez.")    
-
-
+        print("O número ",I," aparece ",n," vez.")
