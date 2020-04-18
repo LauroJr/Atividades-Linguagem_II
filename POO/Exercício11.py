@@ -63,11 +63,11 @@ print()
 cont = 0
 
 for i in range(101):
-        print("Computando...")
-        print(f"{i}%")
-        print(i*'◼')
-        time.sleep(0.03)
-        os.system("cls")
+    print("Computando...")
+    print(f"{i}%")
+    print(i*'◼')
+    time.sleep(0.03)
+    os.system("cls")
 
 for filme in lista_filmes:
     cont += 1
