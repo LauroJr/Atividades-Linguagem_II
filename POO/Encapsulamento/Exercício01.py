@@ -1,7 +1,7 @@
 import os
 import time
 
-'''Exercício 11
+'''Exercício 01
 
 Implemente a classe Filme, conforme o diagrama de classes abaixo
 Todos os atributos devem ser privados

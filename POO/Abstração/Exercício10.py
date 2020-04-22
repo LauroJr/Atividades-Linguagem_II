@@ -1,4 +1,4 @@
-''' Exercício 05
+''' Exercício 10
 
 Logo abaixo encontramos um relacionamento apartir de 3 classes.
 Temos uma classe Exame, outra Medico, e uma ultima Paciente. Iremos relacionar

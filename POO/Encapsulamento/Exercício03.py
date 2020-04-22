@@ -1,4 +1,4 @@
-'''Exercício 13
+'''Exercício 03
 
 Implemente a classe CarroCorrida
 
@@ -92,6 +92,6 @@ print(carro.get_velocidade_atual())  # imprime 100
 carro.acelerar(70)
 print(carro.get_velocidade_atual())  # imprime 150, não ultrapassar a vel. max.
 carro.frear()
-print(carro.get_velocidade_atual())  # imprime 0 '''
+print(carro.get_velocidade_atual())  # imprime 0
 print(carro.desligar())
 print(carro.desligar())

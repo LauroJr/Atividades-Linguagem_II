@@ -1,4 +1,4 @@
-'''Exercício 12
+'''Exercício 02
 
 Implemente as classes ContaBancaria e Cliente, conforme o diagrama de classes
 abaixo.

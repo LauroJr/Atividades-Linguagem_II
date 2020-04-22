@@ -1,4 +1,4 @@
-'''Exercício 02
+'''Exercício 07
 
 Implemente as classes Produto e Pedido.
 
