@@ -37,7 +37,7 @@ class Carro(Veiculo):
     def exibir_dados(self):
         print("Carro:")
         super().exibir_dados()
-        print(f'  Cor: {self.cor}\n  Modelo {self.modelo} ]')
+        print(f'  Cor: {self.cor}\n  Modelo: {self.modelo} ]')
         print()
 
 

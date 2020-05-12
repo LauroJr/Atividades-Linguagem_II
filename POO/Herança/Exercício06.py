@@ -4,7 +4,7 @@ Implemente as classes de modo que obedeçam os relacionamentos apresentados no
 diagrama abaixo:
 Sabe-se que um professor é um funcionário. Além de professores, há
 funcionários que são técnicos administrativos.
-Para cada funcionário, i ndependente de ser professor ou técnico, é necessário
+Para cada funcionário, independente de ser professor ou técnico, é necessário
 saber seu nome, endereço, telefone, cpf e salário.
 Especificamente para professores, é necessário saber sua titulação e as
 disciplinas que ele leciona. Especificamente para técnicos administrativos, é
