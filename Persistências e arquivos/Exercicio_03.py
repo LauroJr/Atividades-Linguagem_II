@@ -15,3 +15,14 @@ Linha 4 :           self.idade = idade
 Linha 5 :
 Linha 6 :   p = Pessoa("Maria", 22)
 '''
+
+lendo_linhas = open('C:\\Users\\USUARIO\\Desktop\\JuNiNhOoOo\\Exercícios Python\\Python IMPACTA\\Atividades-Linguagem_II\\Persistências e arquivos\\01_Atividade_de_frequencia_arquivo_textos.py', 'r')
+
+c = 1
+for linhas in lendo_linhas:
+    linhas = linhas.rstrip()
+    if c < 10:
+        print(f'  {c} : ', linhas)
+    else:
+        print(f' {c} : ', linhas)
+    c += 1
