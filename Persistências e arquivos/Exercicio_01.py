@@ -10,7 +10,7 @@ for num in range(10):
     lista.append(num)
 
 lista.sort()
-arquivo_ex_01 = open('\Persistências e arquivos\arquivo_ex_01.txt', 'w')
+arquivo_ex_01 = open('C:\\Users\\USUARIO\\Desktop\\JuNiNhOoOo\\Exercícios Python\\Python IMPACTA\\Atividades-Linguagem_II\\Persistências e arquivos\\arquivo_ex_01.txt', 'w')
 
 for num in lista:
     arquivo_ex_01.write(str(num) + '\n')
