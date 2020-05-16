@@ -7,9 +7,23 @@ import pickle
 anteriormente e exiba os dados das contas armazenadas
 '''
 
-f = open('C:\\Users\\USUARIO\\Desktop\\JuNiNhOoOo\\Exercícios Python\\Python IMPACTA\\Atividades-Linguagem_II\\Persistências e arquivos\\arquivo_ex_05.py', 'rb')
+
+class Conta:
+    def __init__(self, numero, titular, saldo):
+        self.numero = numero
+        self.titular = titular
+        self.saldo = saldo
+
+
+f = open('C:\\Users\\USUARIO\\Desktop\\JuNiNhOoOo\\Exercícios Python\\Python IMPACTA\\Atividades-Linguagem_II\\Persistências e arquivos\\contas.txt', 'rb')
 
 conta = pickle.load(f)
 
 for i in conta:
-    print(conta.nome)
+    print("Numero:", i.numero)
+    print("Titular:", i.titular)
+    print("Saldo:", i.saldo)
+    print("-" * 10)
+    print()
+
+f.close()

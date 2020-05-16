@@ -15,21 +15,23 @@ Armazene a lista de contas em um arquivo utilizando o módulo pickle.
 
 
 class Conta:
-    def __init__(self, nome, titular, saldo):
-        self.nome = nome
+    def __init__(self, titular, numero, saldo):
         self.titular = titular
+        self.numero = numero
         self.saldo = saldo
 
 
-cliente_01 = Conta('Lauro Mendes do Amaral Junior', 'Lauro', 12000.00)
-cliente_02 = Conta('Mariana Araújo da Silva', 'Mariana', 15000.00)
-cliente_03 = Conta('Daniel Mendes do Amaral', 'Daniel', 13500.00)
+cliente_01 = Conta('Lauro Mendes do Amaral Junior', 1, 12000.00)
+cliente_02 = Conta('Mariana Araújo da Silva', 2, 15000.00)
+cliente_03 = Conta('Daniel Mendes do Amaral', 3, 13500.00)
 
 lista_clientes = [cliente_01, cliente_02, cliente_03]
 
-f = open('C:\\Users\\USUARIO\\Desktop\\JuNiNhOoOo\\Exercícios Python\\Python IMPACTA\\Atividades-Linguagem_II\\Persistências e arquivos\\arquivo_ex_05.py', 'wb')
+f = open('C:\\Users\\USUARIO\\Desktop\\JuNiNhOoOo\\Exercícios Python\\Python IMPACTA\\Atividades-Linguagem_II\\Persistências e arquivos\\contas.txt', 'wb')
 
 pickle.dump(lista_clientes, f)
+f.close()
+
 
 '''
 b) Crie um novo programa. Neste programa, leia o conteúdo do arquivo criado
